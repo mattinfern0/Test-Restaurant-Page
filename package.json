@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page Project Following Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matthew Fernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.39.3"
+  }
+}
