@@ -10,4 +10,13 @@ function createP(text){
     return result;
 }
 
-export {clearChildren, createP};
+function createArticleHeader(text){
+    var articleHeader = document.createElement('header');
+    articleHeader.classList.add('header-article');
+    var headerTitle = document.createElement('h2');
+    headerTitle.innerText = text;
+    articleHeader.appendChild(headerTitle);
+    return articleHeader;    
+}
+
+export {clearChildren, createP, createArticleHeader};

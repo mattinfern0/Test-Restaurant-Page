@@ -3,7 +3,6 @@ import * as utils from './utils.js';
 function loadHome(){
 
     var content = document.getElementById('tab-content');
-    utils.clearChildren(content);
     var mainImage = document.createElement('img');
     mainImage.src = "images/cofee.jpg"
     content.appendChild(mainImage);

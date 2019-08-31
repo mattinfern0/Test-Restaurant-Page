@@ -1,24 +1,25 @@
 import * as utils from './utils.js'
 
-var text = [
-    "Today's Menu",
+var menu = [
     "Ella Latte",
     "Chocolate Muffins",
-    "Express Espresso"
+    "Express Espresso",
+    "Fruit Medley",
 ]
 
 function loadMenu(){
     var content = document.getElementById('tab-content');
-    utils.clearChildren(content);
 
-    var aSection = document.createElement('section');
-    aSection.classList.add("block-text");
+    var menuArticle = document.createElement('article');
+    menuArticle.classList.add("block-text");
 
-    text.forEach((t) =>{
-        let p = utils.createP(t);
-        aSection.appendChild(p);
+    menuArticle.appendChild(utils.createArticleHeader('Our Menu'));
+
+    menu.forEach((item) =>{
+        let paragraph = utils.createP(item);
+        menuArticle.appendChild(paragraph);
     })
-    content.appendChild(aSection);
+    content.appendChild(menuArticle);
 }
 
 export default loadMenu;
