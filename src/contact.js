@@ -1,7 +1,7 @@
 import * as utils from './utils.js'
 
 const PHONE = "(123) 456-7890";
-const ADDRESS = "123 Somwhere St., Nowhere, 4567";
+const ADDRESS = "123 Somewhere St, Nowhere, 4567";
 
 function loadContact(){
     var content = document.getElementById('tab-content');
